@@ -27,6 +27,11 @@ body {
 }
 .tagline {
   margin-top: 0.5rem;
+  display: inline-block;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: caret 0.75s step-end infinite;
 }
 main {
   max-width: 900px;
@@ -59,6 +64,12 @@ section h2 {
   padding: 0.3rem 0.6rem;
   border-radius: 3px;
   font-size: 0.9rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .hidden {
   opacity: 0;
@@ -72,4 +83,10 @@ section h2 {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
