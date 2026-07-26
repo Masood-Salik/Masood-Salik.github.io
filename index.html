@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3ead9" />
+    <meta
+      name="description"
+      content="Interactive WebGL character prototype for Masood Salik’s engineering portfolio."
+    />
+    <title>Masood Salik — Interactive 3D Character Lab</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip the 3D scene</a>
+
+    <header class="site-header">
+      <a class="brand" href="#workbench" aria-label="Masood Salik, character lab home">
+        <span class="brand-cube" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </span>
+        <span>
+          <strong>Masood Salik</strong>
+          <small>3D character lab / 01</small>
+        </span>
+      </a>
+
+      <nav aria-label="Character scenes">
+        <a href="#workbench" data-nav-scene="0">Workbench</a>
+        <a href="#scanner" data-nav-scene="1">Systems scan</a>
+        <a href="#projects" data-nav-scene="2">Projects</a>
+      </nav>
+
+      <a class="header-contact" href="mailto:masoodsalik547@gmail.com">Let’s build ↗</a>
+    </header>
+
+    <div class="webgl-shell" data-webgl-shell>
+      <canvas
+        class="webgl-canvas"
+        data-webgl-canvas
+        role="img"
+        aria-label="Interactive stylised 3D character of Masood Salik at an electronics workbench"
+      ></canvas>
+      <div class="loading-screen" data-loading>
+        <span class="loading-index">MS / 3D</span>
+        <strong>Assembling character</strong>
+        <span class="loading-line"><i></i></span>
+      </div>
+      <p class="webgl-fallback" data-webgl-fallback hidden>
+        The 3D scene needs WebGL. The written portfolio remains available below.
+      </p>
+      <div class="interaction-note" aria-hidden="true">
+        <span>MOVE</span> character follows cursor
+        <span>DRAG</span> rotate scene
+        <span>CLICK</span> say hello
+      </div>
+      <div class="scene-counter" aria-hidden="true">
+        <strong data-scene-current>01</strong>
+        <span></span>
+        <small>03</small>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="scene-section scene-section--workbench" id="workbench" data-scene="0">
+        <div class="scene-copy scene-copy--hero">
+          <p class="eyebrow">Hardware systems · analog · embedded</p>
+          <h1>
+            Masood
+            <span>Salik</span>
+          </h1>
+          <p class="role-stamp">Hardware design engineer</p>
+          <p class="scene-summary">
+            I turn difficult electrical requirements into hardware that can be simulated,
+            built, measured and trusted.
+          </p>
+          <a class="scroll-cue" href="#scanner">
+            Scroll to inspect the system
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <aside class="scene-label scene-label--right">
+          <span>LIVE SCENE 01</span>
+          <strong>At the engineering bench</strong>
+          <p>Move your cursor. Drag the room. Click Masood for a wave.</p>
+        </aside>
+      </section>
+
+      <section class="scene-section scene-section--scanner" id="scanner" data-scene="1">
+        <div class="scene-copy scene-copy--scanner">
+          <p class="eyebrow">Capability scan / live</p>
+          <h2>One engineer.<br />The whole signal chain.</h2>
+          <p>
+            Scroll moves the same character out of the workshop and into a systems
+            scanner—mirroring the reference’s persistent 3D storytelling.
+          </p>
+        </div>
+
+        <div class="scan-cards" aria-label="Engineering capabilities">
+          <article>
+            <span>01</span>
+            <strong>Analog & mixed-signal</strong>
+            <small>15 GHz TIA · signal conditioning · low-noise design</small>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>PCB & embedded</strong>
+            <small>Altium · STM32 · dsPIC · sensor interfaces</small>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>FPGA bring-up</strong>
+            <small>Spartan · Artix · Zynq · Verilog validation</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="scene-section scene-section--projects" id="projects" data-scene="2">
+        <div class="scene-copy scene-copy--projects">
+          <p class="eyebrow">Selected systems / 06</p>
+          <h2>Ideas become instruments.</h2>
+          <p>
+            Hover the floating project modules. The final portfolio will connect each
+            module to a complete case study.
+          </p>
+        </div>
+
+        <div class="project-list" aria-label="Selected projects">
+          <a href="#project-tia" data-project-index="0">
+            <span>01</span>
+            <strong>TSMC 65 nm TIA</strong>
+            <small>25 Gbps verified</small>
+          </a>
+          <a href="#project-iot" data-project-index="1">
+            <span>02</span>
+            <strong>Biomedical IoT</strong>
+            <small>Sensing + alerts</small>
+          </a>
+          <a href="#project-fpga" data-project-index="2">
+            <span>03</span>
+            <strong>FPGA platforms</strong>
+            <small>Bring-up + validation</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="prototype-notes" aria-labelledby="prototype-title">
+        <div>
+          <p class="eyebrow">Prototype checkpoint</p>
+          <h2 id="prototype-title">Approve the character before the portfolio wraps around it.</h2>
+        </div>
+        <dl>
+          <div><dt>Face</dt><dd>Small eyes, silver aviator glasses, approved beard silhouette.</dd></div>
+          <div><dt>Wardrobe</dt><dd>Deep-navy tailored suit, white shirt and dark shoes.</dd></div>
+          <div><dt>Interaction</dt><dd>Cursor tracking, drag orbit, click wave and scroll scene states.</dd></div>
+          <div><dt>Next</dt><dd>Refine likeness, then connect the scene to the full portfolio content.</dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <script type="module" src="./scene.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+[hidden] {
+  display: none !important;
+}
+
+body[data-active-scene="1"] .site-header {
+  color: #fff !important;
+}
+
+body[data-active-scene="1"] .site-header nav {
+  border-color: rgb(66 229 238 / 0.34);
+  background: rgb(6 26 64 / 0.82) !important;
+}
+
+body[data-active-scene="1"] .site-header nav a {
+  color: #fff;
+}
+
+body[data-active-scene="1"] .brand small {
+  color: #9eb8df !important;
+}
+
+body[data-active-scene="2"] .site-header {
+  color: #171714 !important;
+}
+
+body[data-active-scene="2"] .site-header nav {
+  background: rgb(243 234 217 / 0.88) !important;
+}
+
+.scene-section {
+  overflow: clip;
+}
+
+@media (max-width: 620px) {
+  .scene-copy h1,
+  .scene-copy h2 {
+    max-width: calc(100vw - 28px);
+    overflow-wrap: anywhere;
+  }
+
+  .scene-copy h2 {
+    font-size: clamp(2.85rem, 15vw, 4.4rem);
+  }
+
+  .role-stamp {
+    max-width: calc(100vw - 28px);
+    white-space: normal;
+  }
+
+  .webgl-shell,
+  .webgl-canvas {
+    max-width: 100vw;
+  }
+}
