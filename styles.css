@@ -321,7 +321,7 @@ main button,
 }
 
 .scene-copy--hero {
-  padding-top: 16vh;
+  padding-top: max(16vh, 140px);
 }
 
 .eyebrow {
@@ -858,11 +858,11 @@ main button,
   .scene-copy--hero,
   .scene-copy--scanner,
   .scene-copy--projects {
-    padding-top: 3vh;
+    padding-top: 14vh;
   }
 
   .scene-copy h1 {
-    font-size: clamp(3.8rem, 22vw, 6rem);
+    font-size: clamp(3.2rem, 16vw, 5.2rem);
   }
 
   .scene-copy h2 {

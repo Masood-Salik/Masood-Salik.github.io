@@ -21,7 +21,6 @@
         </span>
         <span>
           <strong>Masood Salik</strong>
-          <small>3D character lab / 01</small>
         </span>
       </a>
 
@@ -49,11 +48,6 @@
       <p class="webgl-fallback" data-webgl-fallback hidden>
         The 3D scene needs WebGL. The written portfolio remains available below.
       </p>
-      <div class="interaction-note" aria-hidden="true">
-        <span>MOVE</span> character follows cursor
-        <span>DRAG</span> rotate scene
-        <span>CLICK</span> say hello
-      </div>
       <div class="scene-counter" aria-hidden="true">
         <strong data-scene-current>01</strong>
         <span></span>
@@ -64,43 +58,33 @@
     <main id="main">
       <section class="scene-section scene-section--workbench" id="workbench" data-scene="0">
         <div class="scene-copy scene-copy--hero">
-          <p class="eyebrow">Hardware systems · analog · embedded</p>
+          <p class="eyebrow">Hardware · software · AI-augmented systems</p>
           <h1>
             Masood
             <span>Salik</span>
           </h1>
-          <p class="role-stamp">Hardware design engineer</p>
+          <p class="role-stamp">Creative systems designer</p>
           <p class="scene-summary">
-            I turn difficult electrical requirements into hardware that can be simulated,
-            built, measured and trusted.
+            I design the whole stack — from the analog world to the digital world, and
+            the AI-driven workflows that build, test and ship it faster.
           </p>
           <a class="scroll-cue" href="#scanner">
             Scroll to inspect the system
             <span aria-hidden="true">↓</span>
           </a>
         </div>
-
-        <aside class="scene-label scene-label--right">
-          <span>LIVE SCENE 01</span>
-          <strong>At the engineering bench</strong>
-          <p>Move your cursor. Drag the room. Click Masood for a wave.</p>
-        </aside>
       </section>
 
       <section class="scene-section scene-section--scanner" id="scanner" data-scene="1">
         <div class="scene-copy scene-copy--scanner">
           <p class="eyebrow">Capability scan / live</p>
-          <h2>One engineer.<br />The whole signal chain.</h2>
-          <p>
-            Scroll moves the same character out of the workshop and into a systems
-            scanner—mirroring the reference’s persistent 3D storytelling.
-          </p>
+          <h2>One engineer.<br />Every layer of the stack.</h2>
         </div>
 
         <div class="scan-cards" aria-label="Engineering capabilities">
           <article>
             <span>01</span>
-            <strong>Analog & mixed-signal</strong>
+            <strong>Analog & mixed-signal — IC design</strong>
             <small>15 GHz TIA · signal conditioning · low-noise design</small>
           </article>
           <article>
@@ -113,40 +97,47 @@
             <strong>FPGA bring-up</strong>
             <small>Spartan · Artix · Zynq · Verilog validation</small>
           </article>
+          <article>
+            <span>04</span>
+            <strong>AI-augmented workflow</strong>
+            <small>Claude · Codex · Copilot · automation & scraping</small>
+          </article>
         </div>
       </section>
 
       <section class="scene-section scene-section--projects" id="projects" data-scene="2">
         <div class="scene-copy scene-copy--projects">
-          <p class="eyebrow">Selected systems / 06</p>
-          <h2>Ideas become instruments.</h2>
-          <p>
-            Hover the floating project modules. The final portfolio will connect each
-            module to a complete case study.
-          </p>
+          <p class="eyebrow">Core skills / 04</p>
+          <h2>From schematic<br />to fabricated board.</h2>
         </div>
 
-        <div class="project-list" aria-label="Selected projects">
-          <a href="#project-tia" data-project-index="0">
+        <div class="project-list" aria-label="Core skills">
+          <a href="#skills" data-project-index="0">
             <span>01</span>
-            <strong>TSMC 65 nm TIA</strong>
-            <small>25 Gbps verified</small>
+            <strong>PCB &amp; board layout</strong>
+            <small>Multi-layer boards in Altium Designer</small>
           </a>
-          <a href="#project-iot" data-project-index="1">
+          <a href="#skills" data-project-index="1">
             <span>02</span>
-            <strong>Biomedical IoT</strong>
-            <small>Sensing + alerts</small>
+            <strong>Analog &amp; RF circuit design</strong>
+            <small>Front-ends, filters, signal conditioning</small>
           </a>
-          <a href="#project-fpga" data-project-index="2">
+          <a href="#skills" data-project-index="2">
             <span>03</span>
-            <strong>FPGA platforms</strong>
-            <small>Bring-up + validation</small>
+            <strong>Embedded firmware</strong>
+            <small>STM32 · dsPIC · FPGA bring-up</small>
+          </a>
+          <a href="#skills">
+            <span>04</span>
+            <strong>AI-augmented workflow</strong>
+            <small>Claude, Codex &amp; Copilot for automation</small>
           </a>
         </div>
       </section>
 
       <nav class="content-nav" aria-label="Portfolio sections">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#all-projects">Projects</a>
@@ -156,11 +147,22 @@
 
       <section class="content-section" id="about" aria-labelledby="about-title">
         <p class="eyebrow">About</p>
-        <h2 id="about-title">Turning requirements into hardware you can trust.</h2>
+        <h2 id="about-title">A creative systems designer, end to end.</h2>
         <p class="section-lede">
-          I turn difficult electrical requirements into hardware that can be simulated,
-          built, measured and trusted — across analog/mixed-signal design, PCB and
-          embedded systems, and FPGA bring-up.
+          I am a Hardware Design Manager specializing in embedded systems, PCB
+          development, analog/RF electronics, and connected products. I work across
+          the complete hardware lifecycle — from system architecture and component
+          selection to schematic design, PCB layout, prototype bring-up, testing, and
+          design improvement.
+        </p>
+        <p class="section-lede">
+          My background combines commercial hardware development with research
+          experience at RWTH Aachen University. My work has included analog
+          front-end and transimpedance-amplifier design, RFID antennas, IoT
+          biomedical systems, sensor integration, embedded control, and real-time
+          data acquisition. I am particularly interested in developing reliable
+          embedded and electronic products that move successfully from concept to
+          production.
         </p>
         <div class="expertise-grid">
           <article>
@@ -179,12 +181,45 @@
             <strong>Lab data analysis &amp; automation</strong>
             <p>Python and MATLAB-based pipelines for measurement, characterization and reporting.</p>
           </article>
+          <article>
+            <strong>AI-augmented workflow &amp; automation</strong>
+            <p>Vibe-coding with Claude, Codex and Copilot to script scrapers, automate repetitive lab and dev tasks, and compress build-test-iterate cycles.</p>
+          </article>
+          <article>
+            <strong>Creative systems design</strong>
+            <p>Framing ambiguous problems as buildable systems — prototyping fast across hardware, software and interactive/3D interfaces like this site.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="education" aria-labelledby="education-title">
+        <p class="eyebrow">Education</p>
+        <h2 id="education-title">Trained across three countries.</h2>
+        <div class="timeline">
+          <article>
+            <time>2022 – 2024 · Aachen, Germany</time>
+            <h3>M.Sc. Electrical Engineering, Information Technology</h3>
+            <p class="company">RWTH Aachen University</p>
+            <p class="desc">Focus on high-frequency IC design and mixed-signal systems. Thesis on a 15 GHz transimpedance amplifier in TSMC 65 nm, verified at 25 Gbps.</p>
+          </article>
+          <article>
+            <time>2022 – 2024 · Bangkok, Thailand</time>
+            <h3>M.Eng. Electrical Engineering (double-degree exchange)</h3>
+            <p class="company">King Mongkut's University of Technology North Bangkok (KMUTNB)</p>
+            <p class="desc">Research assistantships in biomedical IoT sensing and RF antenna design alongside the RWTH program.</p>
+          </article>
+          <article>
+            <time>Sep 2014 – Jun 2018 · Pakistan</time>
+            <h3>B.Sc. Electrical Engineering</h3>
+            <p class="company">Pakistan Institute of Engineering &amp; Applied Sciences (PIEAS)</p>
+            <p class="desc">Grade: 3.96/4.00. Awarded the President's Gold Medal for securing the top position in BS Electrical Engineering.</p>
+          </article>
         </div>
       </section>
 
       <section class="content-section" id="experience" aria-labelledby="experience-title">
         <p class="eyebrow">Experience</p>
-        <h2 id="experience-title">Seven roles, three countries.</h2>
+        <h2 id="experience-title">Five roles, three countries.</h2>
         <div class="timeline">
           <article>
             <time>Aug 2024 – Present · Islamabad, Pakistan</time>
@@ -215,18 +250,6 @@
             <h3>Research Internship</h3>
             <p class="company">Silicon Craft Technology PLC</p>
             <p class="desc">Designed an analog front-end emulator in Altium for RFID at 920 MHz. Developed a CST workflow for image-to-geometry import and simulated S11, matching networks and radiation patterns.</p>
-          </article>
-          <article>
-            <time>Feb 2019 – May 2022 · Pakistan</time>
-            <h3>Hardware Design Engineer</h3>
-            <p class="company">SUM Group</p>
-            <p class="desc">Designed multi-layer PCBs in Altium Designer. Conducted debugging, qualification and functional testing. Performed data analysis and simulation in LTSpice/MATLAB and led training programs for interns and staff.</p>
-          </article>
-          <article>
-            <time>Jun 2016 – Jul 2016 · Pakistan</time>
-            <h3>Engineering Trainee</h3>
-            <p class="company">Peoples Steel Mills</p>
-            <p class="desc">Supported AC motor control panel maintenance, with exposure to plant-wide power distribution systems and industrial electrical safety protocols.</p>
           </article>
         </div>
       </section>
@@ -263,7 +286,9 @@
           <div>
             <h3>Verification &amp; testing</h3>
             <ul>
-              <li>Lab measurement</li>
+              <li>Oscilloscopes</li>
+              <li>VNA</li>
+              <li>Bench meters</li>
               <li>Automated testing</li>
               <li>Characterization</li>
               <li>Debug</li>
@@ -278,6 +303,15 @@
               <li>Power integrity</li>
             </ul>
           </div>
+          <div>
+            <h3>AI-augmented workflow</h3>
+            <ul>
+              <li>Vibe coding (Claude, Codex, Copilot)</li>
+              <li>Web scraping &amp; data pipelines</li>
+              <li>Workflow &amp; build automation</li>
+              <li>Rapid prototyping</li>
+            </ul>
+          </div>
         </div>
         <div class="tech-pills" aria-label="Tools and languages">
           <span>Altium Designer</span>
@@ -290,6 +324,9 @@
           <span>MATLAB</span>
           <span>C/C++</span>
           <span>Git</span>
+          <span>Claude</span>
+          <span>Codex</span>
+          <span>GitHub Copilot</span>
         </div>
       </section>
 
@@ -304,6 +341,12 @@
             <div class="tags"><span>IC design</span><span>Analog</span><span>TSMC 65nm</span><span>ADS</span><span>High-speed</span></div>
           </article>
           <article class="project-card">
+            <time>2026</time>
+            <h3>This portfolio — interactive 3D character lab</h3>
+            <p>Custom WebGL/Three.js scene built and iterated with Claude, Codex and Copilot as coding partners — from character rigging to scroll choreography.</p>
+            <div class="tags"><span>Three.js</span><span>WebGL</span><span>AI-assisted dev</span><span>Creative coding</span></div>
+          </article>
+          <article class="project-card">
             <time>Aug 2024</time>
             <h3>Optim.AI</h3>
             <p>Streamlit-based analytical web app on AWS leveraging the MATLAB Engine, so models run through a browser without requiring technical expertise.</p>
@@ -311,39 +354,45 @@
           </article>
           <article class="project-card">
             <time>Feb – May 2023</time>
-            <h3>IoT-enabled biomedical measurement system</h3>
-            <p>Remote patient monitoring with precision sensors, microcontroller processing and a cloud dashboard with alerts.</p>
-            <div class="tags"><span>IoT</span><span>Embedded</span><span>Healthcare</span><span>SQL</span></div>
+            <h3>IoT-enabled biomedical system for weight and volume measurement</h3>
+            <p>IoT-based biomedical sensing system with NB-IoT connectivity (DEVIO NB-DEVKIT-I, ESP32), real-time alerts, SQL data logging and a dashboard for analysis. With King Mongkut's University of Technology North Bangkok.</p>
+            <div class="tags"><span>IoT</span><span>Embedded</span><span>ESP32</span><span>SQL</span><span>Healthcare</span></div>
           </article>
           <article class="project-card">
             <time>Nov – Dec 2022</time>
             <h3>Collision avoidance system using YOLOv7</h3>
-            <p>YOLOv7 deep-learning model optimized for edge deployment for autonomous-vehicle object detection.</p>
-            <div class="tags"><span>Computer vision</span><span>Deep learning</span><span>Python</span></div>
+            <p>Real-time object detection and collision-avoidance prototype using YOLOv7 with distance estimation and decision logic.</p>
+            <div class="tags"><span>Machine vision</span><span>Python</span><span>Deep learning</span></div>
           </article>
           <article class="project-card">
             <time>2019</time>
             <h3>Cost-effective EECP system</h3>
-            <p>Redesigned medical device reducing cost while maintaining therapeutic effectiveness.</p>
+            <p>Low-cost Enhanced External Counterpulsation (EECP) prototype featuring pneumatic control, continuous ECG acquisition, and safety/monitoring algorithms for Chronic Stable Angina patients.</p>
             <div class="tags"><span>Medical devices</span><span>PCB design</span><span>Control systems</span></div>
           </article>
           <article class="project-card">
-            <time>2017 – 2018</time>
+            <time>Jul 2017 – Feb 2018</time>
             <h3>Electro-optical infrared payload</h3>
-            <p>Compact, high-performance imaging payloads with stabilization for UAV surveillance.</p>
-            <div class="tags"><span>RF</span><span>Imaging</span><span>Embedded</span><span>UAV</span></div>
+            <p>Integrated multiple sensors with the TI Tiva C Series LaunchPad (EK-TM4C123GXL), developing real-time firmware for data acquisition, interpretation and processing, and configuring sensors and peripherals over serial interfaces. With PIEAS.</p>
+            <div class="tags"><span>Microcontrollers</span><span>Embedded systems</span></div>
           </article>
           <article class="project-card">
-            <time>2017</time>
+            <time>Apr – Aug 2017</time>
+            <h3>RC plane design &amp; manufacturing (DBFC-12)</h3>
+            <p>Designed and built the "MATTAR" RC plane based on aerodynamic simulations for the DBFC-12 competition. With PIEAS.</p>
+            <div class="tags"><span>Teamwork</span><span>Project management</span></div>
+          </article>
+          <article class="project-card">
+            <time>Jan – Apr 2017</time>
             <h3>1 kVA SPWM inverter design</h3>
-            <p>Pure sine-wave inverter achieving THD &lt; 3% with efficiency exceeding 90%.</p>
-            <div class="tags"><span>Power electronics</span><span>PCB design</span><span>Simulation</span></div>
+            <p>Sinusoidal PWM inverter designed in LTSpice achieving 80% efficiency and 15% THD. With PIEAS.</p>
+            <div class="tags"><span>Power electronics</span><span>LTSpice</span><span>R&amp;D</span></div>
           </article>
           <article class="project-card">
-            <time>2015</time>
-            <h3>Autonomous robot for NERC</h3>
-            <p>Sensor-equipped contest robot with autonomous navigation and task completion.</p>
-            <div class="tags"><span>Robotics</span><span>Embedded</span><span>Competition</span></div>
+            <time>Jun – Sep 2015</time>
+            <h3>Autonomous robot for NERC competition</h3>
+            <p>Autonomous robot with custom electronics, motor drivers, and Dijkstra-based path planning. With PIEAS.</p>
+            <div class="tags"><span>Microcontrollers</span><span>Robotics</span></div>
           </article>
         </div>
       </section>
@@ -376,7 +425,7 @@
         <h2 id="contact-title">Let's build something reliable.</h2>
         <p class="section-lede">Based in Pakistan, open to hardware design and embedded systems work worldwide.</p>
         <div class="contact-links">
-          <a class="is-primary" href="mailto:masoodsalik547@gmail.com">masoodsalik547@gmail.com</a>
+          <a class="is-primary" href="mailto:masoodsalik547@gmail.com">Email ↗</a>
           <a href="https://www.linkedin.com/in/masoodsalik/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href="https://github.com/Masood-Salik" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
