@@ -145,18 +145,247 @@
         </div>
       </section>
 
-      <section class="prototype-notes" aria-labelledby="prototype-title">
-        <div>
-          <p class="eyebrow">Prototype checkpoint</p>
-          <h2 id="prototype-title">Approve the character before the portfolio wraps around it.</h2>
+      <nav class="content-nav" aria-label="Portfolio sections">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#all-projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <section class="content-section" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Turning requirements into hardware you can trust.</h2>
+        <p class="section-lede">
+          I turn difficult electrical requirements into hardware that can be simulated,
+          built, measured and trusted — across analog/mixed-signal design, PCB and
+          embedded systems, and FPGA bring-up.
+        </p>
+        <div class="expertise-grid">
+          <article>
+            <strong>Analog/mixed-signal design</strong>
+            <p>High-performance analog circuits, signal conditioning, and mixed-signal system design with focus on precision and reliability.</p>
+          </article>
+          <article>
+            <strong>PCB &amp; embedded systems</strong>
+            <p>Multi-layer PCB design in Altium and firmware development for STM32, dsPIC and FPGA platforms.</p>
+          </article>
+          <article>
+            <strong>FPGA bring-up &amp; validation</strong>
+            <p>Spartan, Artix and Zynq development with Verilog coding, debug and validation.</p>
+          </article>
+          <article>
+            <strong>Lab data analysis &amp; automation</strong>
+            <p>Python and MATLAB-based pipelines for measurement, characterization and reporting.</p>
+          </article>
         </div>
-        <dl>
-          <div><dt>Face</dt><dd>Small eyes, silver aviator glasses, approved beard silhouette.</dd></div>
-          <div><dt>Wardrobe</dt><dd>Deep-navy tailored suit, white shirt and dark shoes.</dd></div>
-          <div><dt>Interaction</dt><dd>Cursor tracking, drag orbit, click wave and scroll scene states.</dd></div>
-          <div><dt>Next</dt><dd>Refine likeness, then connect the scene to the full portfolio content.</dd></div>
-        </dl>
       </section>
+
+      <section class="content-section" id="experience" aria-labelledby="experience-title">
+        <p class="eyebrow">Experience</p>
+        <h2 id="experience-title">Seven roles, three countries.</h2>
+        <div class="timeline">
+          <article>
+            <time>Aug 2024 – Present · Islamabad, Pakistan</time>
+            <h3>Hardware Design Manager</h3>
+            <p class="company">Embedded System Solutions</p>
+            <p class="desc">Lead embedded hardware design and prototyping initiatives. Work with Spartan/Artix/Zynq FPGAs and TI/dsPIC33/STM32 microcontrollers. Implement sensor interfacing and signal conditioning circuits. Develop Verilog and C code for bring-up, debug and validation.</p>
+          </article>
+          <article>
+            <time>Aug 2023 – Jul 2024 · Aachen, Germany</time>
+            <h3>Research Internship &amp; Master Thesis</h3>
+            <p class="company">RWTH Aachen University</p>
+            <p class="desc">Developed a Python GUI integrating a MATLAB backend with ADS for high-frequency IC startup. Master thesis: transimpedance amplifier achieving 58.87 dB gain, 15 GHz bandwidth, verified 25 Gbps operation with BER ≈ 10⁻¹⁵ through eye-diagram analysis. Designed in TSMC 65 nm with 20.7 mW power and 0.135 mm² area.</p>
+          </article>
+          <article>
+            <time>Dec 2023 – Jul 2024 · Aachen, Germany</time>
+            <h3>Student Research Assistant</h3>
+            <p class="company">WZL RWTH Aachen</p>
+            <p class="desc">Developed a MATLAB GUI for 3D object localization. Processed MEMS ultrasonic sensor data for spatial analysis and implemented signal processing algorithms for accurate positioning.</p>
+          </article>
+          <article>
+            <time>Jan 2023 – Jul 2024 · Bangkok, Thailand</time>
+            <h3>Research Assistant</h3>
+            <p class="company">HFS Lab Bangkok</p>
+            <p class="desc">Built an IoT biomedical measurement system with real-time alerts. Implemented SQL logging and an interactive dashboard, integrating multiple sensors for comprehensive health monitoring.</p>
+          </article>
+          <article>
+            <time>May 2023 – Jul 2023 · Bangkok, Thailand</time>
+            <h3>Research Internship</h3>
+            <p class="company">Silicon Craft Technology PLC</p>
+            <p class="desc">Designed an analog front-end emulator in Altium for RFID at 920 MHz. Developed a CST workflow for image-to-geometry import and simulated S11, matching networks and radiation patterns.</p>
+          </article>
+          <article>
+            <time>Feb 2019 – May 2022 · Pakistan</time>
+            <h3>Hardware Design Engineer</h3>
+            <p class="company">SUM Group</p>
+            <p class="desc">Designed multi-layer PCBs in Altium Designer. Conducted debugging, qualification and functional testing. Performed data analysis and simulation in LTSpice/MATLAB and led training programs for interns and staff.</p>
+          </article>
+          <article>
+            <time>Jun 2016 – Jul 2016 · Pakistan</time>
+            <h3>Engineering Trainee</h3>
+            <p class="company">Peoples Steel Mills</p>
+            <p class="desc">Supported AC motor control panel maintenance, with exposure to plant-wide power distribution systems and industrial electrical safety protocols.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="skills" aria-labelledby="skills-title">
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="skills-title">Technical skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Signal conditioning</h3>
+            <ul>
+              <li>Amplifier / filter design</li>
+              <li>ADC / DAC interface</li>
+              <li>Noise analysis</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Sensor interfacing</h3>
+            <ul>
+              <li>Temperature</li>
+              <li>Pressure</li>
+              <li>Optical</li>
+              <li>MEMS</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Embedded protocols</h3>
+            <ul>
+              <li>SPI</li>
+              <li>I2C</li>
+              <li>UART</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Verification &amp; testing</h3>
+            <ul>
+              <li>Lab measurement</li>
+              <li>Automated testing</li>
+              <li>Characterization</li>
+              <li>Debug</li>
+            </ul>
+          </div>
+          <div>
+            <h3>EM-aware layout</h3>
+            <ul>
+              <li>High-speed PCB</li>
+              <li>RF design</li>
+              <li>Signal integrity</li>
+              <li>Power integrity</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tech-pills" aria-label="Tools and languages">
+          <span>Altium Designer</span>
+          <span>ADS</span>
+          <span>CST Studio</span>
+          <span>LTSpice</span>
+          <span>STM32</span>
+          <span>FPGA / Verilog</span>
+          <span>Python</span>
+          <span>MATLAB</span>
+          <span>C/C++</span>
+          <span>Git</span>
+        </div>
+      </section>
+
+      <section class="content-section" id="all-projects" aria-labelledby="all-projects-title">
+        <p class="eyebrow">Selected systems</p>
+        <h2 id="all-projects-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card is-featured">
+            <time>Master thesis</time>
+            <h3>High-performance transimpedance amplifier — TSMC 65 nm CMOS</h3>
+            <p>58.87 dB gain, 15 GHz bandwidth, 16 pA/√Hz noise, verified at 25 Gbps.</p>
+            <div class="tags"><span>IC design</span><span>Analog</span><span>TSMC 65nm</span><span>ADS</span><span>High-speed</span></div>
+          </article>
+          <article class="project-card">
+            <time>Aug 2024</time>
+            <h3>Optim.AI</h3>
+            <p>Streamlit-based analytical web app on AWS leveraging the MATLAB Engine, so models run through a browser without requiring technical expertise.</p>
+            <div class="tags"><span>Streamlit</span><span>AWS</span><span>MATLAB</span><span>Python</span></div>
+          </article>
+          <article class="project-card">
+            <time>Feb – May 2023</time>
+            <h3>IoT-enabled biomedical measurement system</h3>
+            <p>Remote patient monitoring with precision sensors, microcontroller processing and a cloud dashboard with alerts.</p>
+            <div class="tags"><span>IoT</span><span>Embedded</span><span>Healthcare</span><span>SQL</span></div>
+          </article>
+          <article class="project-card">
+            <time>Nov – Dec 2022</time>
+            <h3>Collision avoidance system using YOLOv7</h3>
+            <p>YOLOv7 deep-learning model optimized for edge deployment for autonomous-vehicle object detection.</p>
+            <div class="tags"><span>Computer vision</span><span>Deep learning</span><span>Python</span></div>
+          </article>
+          <article class="project-card">
+            <time>2019</time>
+            <h3>Cost-effective EECP system</h3>
+            <p>Redesigned medical device reducing cost while maintaining therapeutic effectiveness.</p>
+            <div class="tags"><span>Medical devices</span><span>PCB design</span><span>Control systems</span></div>
+          </article>
+          <article class="project-card">
+            <time>2017 – 2018</time>
+            <h3>Electro-optical infrared payload</h3>
+            <p>Compact, high-performance imaging payloads with stabilization for UAV surveillance.</p>
+            <div class="tags"><span>RF</span><span>Imaging</span><span>Embedded</span><span>UAV</span></div>
+          </article>
+          <article class="project-card">
+            <time>2017</time>
+            <h3>1 kVA SPWM inverter design</h3>
+            <p>Pure sine-wave inverter achieving THD &lt; 3% with efficiency exceeding 90%.</p>
+            <div class="tags"><span>Power electronics</span><span>PCB design</span><span>Simulation</span></div>
+          </article>
+          <article class="project-card">
+            <time>2015</time>
+            <h3>Autonomous robot for NERC</h3>
+            <p>Sensor-equipped contest robot with autonomous navigation and task completion.</p>
+            <div class="tags"><span>Robotics</span><span>Embedded</span><span>Competition</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="publications" aria-labelledby="publications-title">
+        <p class="eyebrow">Publications</p>
+        <h2 id="publications-title">Published work</h2>
+        <div class="publication-list">
+          <article>
+            <h3>Transparent UHF-RFID Tag Antenna for IoT Applications</h3>
+            <span>IEEE · 2024</span>
+          </article>
+          <article>
+            <h3>Tri-Beam UHF-RFID Tag Antenna for Indoor Asset Tracking</h3>
+            <span>IEEE · 2024</span>
+          </article>
+          <article>
+            <h3>Automatic Human Facial Affect Classification</h3>
+            <span>MAJICC · 2021</span>
+          </article>
+          <article>
+            <h3>HP-GRU Model for Wall Following Robot</h3>
+            <span>Int'l Journal of Robotics and Control · 2021</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section content-section--contact" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Let's build something reliable.</h2>
+        <p class="section-lede">Based in Pakistan, open to hardware design and embedded systems work worldwide.</p>
+        <div class="contact-links">
+          <a class="is-primary" href="mailto:masoodsalik547@gmail.com">masoodsalik547@gmail.com</a>
+          <a href="https://www.linkedin.com/in/masoodsalik/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/Masood-Salik" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>© 2026 Masood Salik. All rights reserved.</span>
+        <span>Pakistan</span>
+      </footer>
     </main>
 
     <script type="module" src="./scene.js"></script>
